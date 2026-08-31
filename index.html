@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soujanya J - Curriculum Vitae</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        .contact-info {
+            font-size: 1.1em;
+            color: var(--secondary-color);
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .job {
+            margin-bottom: 25px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--secondary-color);
+        }
+        .job-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        .job-desc {
+            margin: 0;
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .skill-category {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <header>
+        <h1>SOUJANYA J</h1>
+        <div class="contact-info">
+            Bengaluru, India | +91-9901157636 | <a href="mailto:soujanyajagadish@gmail.com">soujanyajagadish@gmail.com</a>
+        </div>
+    </header>
+
+    <!-- Experience Section -->
+    <section>
+        <h2>Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Online Part Time Faculty, Jyothy Institute of Technology, Bengaluru, India</span>
+                <span class="job-date">Jan 2025 - Present</span>
+            </div>
+            <p class="job-desc">Delivered advanced postgraduate online lecturers in Artificial Intelligence and Deep Learning frameworks for Master of Technology Data Science Students.</p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Independent Mathematics Tutor, Bengaluru, India</span>
+                <span class="job-date">Nov 2022 - Jan 2025</span>
+            </div>
+            <p class="job-desc">Instructed over 50 students in secondary, higher-secondary and core undergraduate engineering Mathematics courses.</p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Manager, GradRight, India</span>
+                <span class="job-date">Oct 2021 - Sept 2022</span>
+            </div>
+            <p class="job-desc">Presales data validation pipelines and lead quality workflows using MongoDB and Python script automations, maintained centralized performance dashboards in Power BI to track multi-channel marketing campaigns.</p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Manager - Outreach & Admissions, Atria University, Bengaluru, India</span>
+                <span class="job-date">Feb 2020 - Sep 2021</span>
+            </div>
+            <p class="job-desc">Modelled prospective student enrollment funnels using Python (Jupyter Notebooks) and integrated CRM databases, led data-backed institutional school outreach campaigns to optimize annual student recruitment drives.</p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Department Coordinator & Mathematics Faculty, BASE Educational Services Pvt. Ltd., Bengaluru</span>
+                <span class="job-date">Dec 2016 - Oct 2019</span>
+            </div>
+            <p class="job-desc">Taught NTSE, NSEJS, and high school Mathematics, mentored faculty, coordinated academic delivery, visited schools and conducted outreach for admissions, created awareness for NTSE and Olympiad programs.</p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Independent Mathematics Tutor, Bengaluru, India</span>
+                <span class="job-date">June 2014 - Nov 2016</span>
+            </div>
+            <p class="job-desc">Academic support for students in Engineering Mathematics and higher-secondary school.</p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Mathematics Teacher, Poorna Prajna Vidyaniketan, Bengaluru, India</span>
+                <span class="job-date">May 2013 - Apr 2014</span>
+            </div>
+            <p class="job-desc">Taught high school Mathematics, promoted foundational and applied science thinking.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+        <h2>Education & Certifications</h2>
+        <table>
+            <tr>
+                <th>Years</th>
+                <th>Degree/Program</th>
+                <th>Institute</th>
+            </tr>
+            <tr>
+                <td>2025-2027</td>
+                <td>Master of Science in Mathematics (Long Distance-Online)</td>
+                <td>Lovely Professional University, India</td>
+            </tr>
+            <tr>
+                <td>2024-2025</td>
+                <td>Master of Data Science (Long Distance-Online)</td>
+                <td>Deakin University</td>
+            </tr>
+            <tr>
+                <td>2023-2024</td>
+                <td>Post Graduate Program in Data Science and Business Analytics</td>
+                <td>Great Learning (with University of Texas at Austin)</td>
+            </tr>
+            <tr>
+                <td>2014-2016</td>
+                <td>Master of Business Administration</td>
+                <td>Bangalore University, India</td>
+            </tr>
+            <tr>
+                <td>2008-2012</td>
+                <td>Bachelor of Engineering in Information Science and Engineering</td>
+                <td>Visvesvaraya Technological University (VTU), Karnataka</td>
+            </tr>
+            <tr>
+                <td>2006-2008</td>
+                <td>Pre-University Course (PUC) / 10+2 (Science stream)</td>
+                <td>National College - Jayanagar, Bengaluru, India</td>
+            </tr>
+            <tr>
+                <td>1993-2006</td>
+                <td>CBSE Class 10 - Secondary School</td>
+                <td>Sri Aurobindo Memorial School, Bengaluru, India</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">Programming Skills</div>
+            <div>Python (NumPy, Pandas, Matplotlib), SQL, MongoDB Basics, C++ Basics</div>
+            
+            <div class="skill-category">Data Analysis</div>
+            <div>Power BI, Tableau, Data Validation Pipelines, Statistical Analysis</div>
+        </div>
+    </section>
+
+    <!-- Research Work Section -->
+    <section>
+        <h2>Current Learning & Research Work</h2>
+        <div class="skills-grid">
+            <div class="skill-category">Mathematical Foundations</div>
+            <div>Navier-Stokes Equations, Partial Differential Equations (PDEs), Mechanics, Vector Calculus, Advanced Linear Algebra, Real & Complex Analysis, Statistics & Probability</div>
+            
+            <div class="skill-category">Tools</div>
+            <div>MATLAB, OpenFOAM, COMSOL</div>
+
+            <div class="skill-category">MSc Mathematics Term Paper</div>
+            <div>Developing a theoretical framework to analyze vorticity dynamics in biological locomotion systems, specifically focusing on flapping wings and flexible fins.</div>
+
+            <div class="skill-category">Independent Project</div>
+            <div>Small-Scale Wind Turbine Design - exploring blade geometry and aerodynamic efficiency, informed by ongoing research in bio-inspired vorticity dynamics.</div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section>
+        <h2>References</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Designation & Organisation</th>
+                <th>Email Id</th>
+            </tr>
+            <tr>
+                <td>Dr. Preety Kalra</td>
+                <td>Professor, Lovely Professional University, India</td>
+                <td><a href="mailto:kalra.preety@gmail.com">kalra.preety@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Dr. Prapulla SB</td>
+                <td>Associate Professor, RV College of Engineering, Bengaluru</td>
+                <td><a href="mailto:prapullasb@rvce.edu.in">prapullasb@rvce.edu.in</a></td>
+            </tr>
+            <tr>
+                <td>Dr. Balaji S</td>
+                <td>Professor, CIIRC, Jyothy Institute of Technology, Bengaluru</td>
+                <td><a href="mailto:balaji.s@ciirc.jyothyit.ac.in">balaji.s@ciirc.jyothyit.ac.in</a></td>
+            </tr>
+            <tr>
+                <td>Dr. Geetha Ramanujan</td>
+                <td>Founder & Academic Director, GR Educational Institutions</td>
+                <td><a href="mailto:drgeetharamanujan@gmail.com">drgeetharamanujan@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Mr. Ashirvad Singh</td>
+                <td>Chief Technology Officer, Poshn (Former CTO, Gradright)</td>
+                <td><a href="mailto:ashirvad@outlook.com">ashirvad@outlook.com</a></td>
+            </tr>
+        </table>
+    </section>
+
+</div>
+
+</body>
+</html>

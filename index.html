@@ -10,7 +10,7 @@
             --tab-active-bg: #ffffff;
             --tab-inactive-bg: #f1f5f9;
             --tab-hover-bg: #e2e8f0;
-            --accent-color: #4A6FA5; /* Mild blue for professional look */
+            --accent-color: #4A6FA5; 
             --text-main: #334155;
             --text-muted: #64748b;
             --bg-color: #f8fafc;
@@ -64,7 +64,7 @@
             background-color: var(--tab-active-bg);
             color: var(--accent-color);
             border-top: 4px solid var(--accent-color);
-            padding-top: 12px; /* Adjust for the border */
+            padding-top: 12px; 
         }
 
         /* Tab Content Styles */
@@ -120,23 +120,40 @@
             color: var(--text-main);
         }
 
-        /* Table Styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        /* Responsive Education Section (Replaced Table) */
+        .edu-card {
+            display: flex;
             margin-bottom: 20px;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 12px;
+            padding-bottom: 15px;
             border-bottom: 1px solid #e2e8f0;
         }
+        
+        .edu-card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
 
-        th {
-            color: var(--primary-color);
-            background-color: #f8fafc;
+        .edu-years {
+            flex: 0 0 120px;
             font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .edu-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .edu-degree {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+        }
+
+        .edu-institute {
+            color: var(--text-main);
         }
 
         /* Grid for Skills and Research */
@@ -152,17 +169,29 @@
             color: var(--primary-color);
         }
 
+        /* Mobile Adjustments */
         @media (max-width: 650px) {
+            .tab-content {
+                padding: 20px;
+            }
             .job-header {
                 flex-direction: column;
+            }
+            .edu-card {
+                flex-direction: column;
+            }
+            .edu-years {
+                margin-bottom: 5px;
+                font-size: 0.95em;
+            }
+            .edu-institute {
+                font-size: 0.9em;
+                color: var(--text-muted);
             }
             .grid-section {
                 grid-template-columns: 1fr;
                 gap: 5px;
                 margin-bottom: 20px;
-            }
-            .tab-content {
-                padding: 20px;
             }
         }
     </style>
@@ -184,7 +213,7 @@
         
         <div class="job-card">
             <div class="job-header">
-                <span class="job-title">Online Part Time Faculty, Jyothy Institute of Technology, Bengaluru, India</span>
+                <span class="job-title">Online Part Time Faculty, Jyothy Institute of Technology, Bengaluru</span>
                 <span class="job-date">Jan 2025 - Present</span>
             </div>
             <p class="job-desc">Delivered advanced postgraduate online lecturers in Artificial Intelligence and Deep Learning frameworks for Master of Technology Data Science Students.</p>
@@ -216,7 +245,7 @@
 
         <div class="job-card">
             <div class="job-header">
-                <span class="job-title">Department Coordinator & Mathematics Faculty, BASE Educational Services Pvt. Ltd., Bengaluru</span>
+                <span class="job-title">Department Coordinator & Mathematics Faculty, BASE Educational Services Pvt. Ltd.</span>
                 <span class="job-date">Dec 2016 - Oct 2019</span>
             </div>
             <p class="job-desc">Taught NTSE, NSEJS, and high school Mathematics, mentored faculty, coordinated academic delivery, visited schools and conducted outreach for admissions, created awareness for NTSE and Olympiad programs.</p>
@@ -239,51 +268,65 @@
         </div>
     </div>
 
-    <!-- Tab 2: Education & Certifications -->
+    <!-- Tab 2: Education & Certifications (Now Fully Responsive) -->
     <div id="Education" class="tab-content">
         <h2>Education & Certifications</h2>
-        <table>
-            <tr>
-                <th>Years</th>
-                <th>Degree/Program</th>
-                <th>Institute</th>
-            </tr>
-            <tr>
-                <td>2025-2027</td>
-                <td>Master of Science in Mathematics (Long Distance-Online)</td>
-                <td>Lovely Professional University, India</td>
-            </tr>
-            <tr>
-                <td>2024-2025</td>
-                <td>Master of Data Science (Long Distance-Online)</td>
-                <td>Deakin University</td>
-            </tr>
-            <tr>
-                <td>2023-2024</td>
-                <td>Post Graduate Program in Data Science and Business Analytics</td>
-                <td>Great Learning (with University of Texas at Austin)</td>
-            </tr>
-            <tr>
-                <td>2014-2016</td>
-                <td>Master of Business Administration</td>
-                <td>Bangalore University, India</td>
-            </tr>
-            <tr>
-                <td>2008-2012</td>
-                <td>Bachelor of Engineering in Information Science and Engineering</td>
-                <td>Visvesvaraya Technological University (VTU), Karnataka</td>
-            </tr>
-            <tr>
-                <td>2006-2008</td>
-                <td>Pre-University Course (PUC) / 10+2 (Science stream)</td>
-                <td>National College - Jayanagar, Bengaluru, India</td>
-            </tr>
-            <tr>
-                <td>1993-2006</td>
-                <td>CBSE Class 10 - Secondary School</td>
-                <td>Sri Aurobindo Memorial School, Bengaluru, India</td>
-            </tr>
-        </table>
+        
+        <div class="edu-card">
+            <div class="edu-years">2025-2027</div>
+            <div class="edu-details">
+                <div class="edu-degree">Master of Science in Mathematics (Long Distance-Online)</div>
+                <div class="edu-institute">Lovely Professional University, India</div>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-years">2024-2025</div>
+            <div class="edu-details">
+                <div class="edu-degree">Master of Data Science (Long Distance-Online)</div>
+                <div class="edu-institute">Deakin University</div>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-years">2023-2024</div>
+            <div class="edu-details">
+                <div class="edu-degree">Post Graduate Program in Data Science and Business Analytics</div>
+                <div class="edu-institute">Great Learning (with University of Texas at Austin)</div>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-years">2014-2016</div>
+            <div class="edu-details">
+                <div class="edu-degree">Master of Business Administration</div>
+                <div class="edu-institute">Bangalore University, India</div>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-years">2008-2012</div>
+            <div class="edu-details">
+                <div class="edu-degree">Bachelor of Engineering in Information Science and Engineering</div>
+                <div class="edu-institute">Visvesvaraya Technological University (VTU), Karnataka</div>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-years">2006-2008</div>
+            <div class="edu-details">
+                <div class="edu-degree">Pre-University Course (PUC) / 10+2 (Science stream)</div>
+                <div class="edu-institute">National College - Jayanagar, Bengaluru, India</div>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-years">1993-2006</div>
+            <div class="edu-details">
+                <div class="edu-degree">CBSE Class 10 - Secondary School</div>
+                <div class="edu-institute">Sri Aurobindo Memorial School, Bengaluru, India</div>
+            </div>
+        </div>
     </div>
 
     <!-- Tab 3: Skills & Research -->
@@ -318,19 +361,16 @@
 <!-- JavaScript for Tab Functionality -->
 <script>
     function openTab(evt, tabName) {
-        // Hide all elements with class="tab-content"
         var tabcontent = document.getElementsByClassName("tab-content");
         for (var i = 0; i < tabcontent.length; i++) {
             tabcontent[i].classList.remove("active");
         }
 
-        // Remove the class "active" from all elements with class="tab-button"
         var tablinks = document.getElementsByClassName("tab-button");
         for (var i = 0; i < tablinks.length; i++) {
             tablinks[i].classList.remove("active");
         }
 
-        // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(tabName).classList.add("active");
         evt.currentTarget.classList.add("active");
     }
